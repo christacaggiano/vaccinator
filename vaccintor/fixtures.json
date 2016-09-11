@@ -1,0 +1,250 @@
+[
+   {
+      "model":"address.address",
+      "pk":1,
+      "fields":{
+         "street_number":"",
+         "route":"",
+         "locality":null,
+         "raw":"159 N. Carson Rd, Beverly Hills, CA, 90211",
+         "formatted":"159 N. Carson Rd, Beverly Hills, CA, 90211",
+         "latitude":null,
+         "longitude":null
+      }
+   },
+   {
+      "model":"address.address",
+      "pk":2,
+      "fields":{
+         "street_number":"",
+         "route":"",
+         "locality":null,
+         "raw":"158 N. Carson Rd, Beverly Hills, CA, 90211",
+         "formatted":"158 N. Carson Rd, Beverly Hills, CA, 90211",
+         "latitude":null,
+         "longitude":null
+      }
+   },
+   {
+      "model":"vaccintor.child",
+      "pk":1,
+      "fields":{
+         "first_name":"Christa",
+         "last_name":"Caggiano",
+         "dob":"2016-08-01",
+         "parent":2
+      }
+   },
+   {
+      "model":"vaccintor.vaccine",
+      "pk":1,
+      "fields":{
+         "complex_name":"Chicken Pox",
+         "simple_name":"Chicken Pox",
+         "description":"something",
+         "age_days":30,
+         "cost":"0.74",
+         "subsidized":true
+      }
+   },
+   {
+      "model":"vaccintor.vaccinecompletion",
+      "pk":1,
+      "fields":{
+         "child":1,
+         "vaccine":1,
+         "completed":false,
+         "needed_before_registration":false
+      }
+   },
+   {
+      "model":"auth.user",
+      "pk":1,
+      "fields":{
+         "password":"pbkdf2_sha256$30000$BgXmNHLPF5ZK$jShcqVGW/bWFIPTqTAh7IqFnUlyRPA/IpGJT80MRXkQ=",
+         "last_login":"2016-09-10T23:15:27.252Z",
+         "is_superuser":true,
+         "username":"arya",
+         "first_name":"",
+         "last_name":"",
+         "email":"misingnoglic@gmail.com",
+         "is_staff":true,
+         "is_active":true,
+         "date_joined":"2016-09-10T22:26:53.514Z",
+         "groups":[
+
+         ],
+         "user_permissions":[
+
+         ]
+      }
+   },
+   {
+      "model":"auth.user",
+      "pk":2,
+      "fields":{
+         "password":"pbkdf2_sha256$30000$5dQucVcwFjMB$9Gdvk3Dv1BsFf940dkIWqkSt/LGNmAwiUIS4b/6mfZc=",
+         "last_login":null,
+         "is_superuser":false,
+         "username":"partow",
+         "first_name":"Partow",
+         "last_name":"Boudaie",
+         "email":"partow@hotmail.com",
+         "is_staff":false,
+         "is_active":true,
+         "date_joined":"2016-09-10T22:39:03.555Z",
+         "groups":[
+
+         ],
+         "user_permissions":[
+
+         ]
+      }
+   },
+   {
+      "model":"auth.user",
+      "pk":3,
+      "fields":{
+         "password":"pbkdf2_sha256$30000$nurTF79Q28mI$bwFUKuSgBhPogHX3YjL/ZzgXOb0Wu1WFR8f/7gwPLx4=",
+         "last_login":null,
+         "is_superuser":false,
+         "username":"maryclaire",
+         "first_name":"Mary Claire",
+         "last_name":"Caggiano",
+         "email":"ccag@brandeis.edu",
+         "is_staff":false,
+         "is_active":true,
+         "date_joined":"2016-09-10T22:39:51.247Z",
+         "groups":[
+
+         ],
+         "user_permissions":[
+
+         ]
+      }
+   },
+   {
+      "model":"vaccintor.parent",
+      "pk":1,
+      "fields":{
+         "user":2,
+         "phone_number":"+13108809283",
+         "address":1,
+         "doctors":null
+      }
+   },
+   {
+      "model":"vaccintor.parent",
+      "pk":2,
+      "fields":{
+         "user":3,
+         "phone_number":"+15854350069",
+         "address":2,
+         "doctors":null
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":1,
+      "fields":{
+         "action_time":"2016-09-10T22:38:24.140Z",
+         "user":1,
+         "content_type":14,
+         "object_id":"1",
+         "object_repr":"Chicken Pox (Chicken Pox) - $0.74",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":2,
+      "fields":{
+         "action_time":"2016-09-10T22:39:03.647Z",
+         "user":1,
+         "content_type":2,
+         "object_id":"2",
+         "object_repr":"partow",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":3,
+      "fields":{
+         "action_time":"2016-09-10T22:39:32.863Z",
+         "user":1,
+         "content_type":13,
+         "object_id":"1",
+         "object_repr":" ",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":4,
+      "fields":{
+         "action_time":"2016-09-10T22:39:51.331Z",
+         "user":1,
+         "content_type":2,
+         "object_id":"3",
+         "object_repr":"maryclaire",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":5,
+      "fields":{
+         "action_time":"2016-09-10T22:41:26.947Z",
+         "user":1,
+         "content_type":13,
+         "object_id":"2",
+         "object_repr":" ",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":6,
+      "fields":{
+         "action_time":"2016-09-10T22:41:58.367Z",
+         "user":1,
+         "content_type":2,
+         "object_id":"3",
+         "object_repr":"maryclaire",
+         "action_flag":2,
+         "change_message":"[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":7,
+      "fields":{
+         "action_time":"2016-09-10T22:43:24.481Z",
+         "user":1,
+         "content_type":2,
+         "object_id":"2",
+         "object_repr":"partow",
+         "action_flag":2,
+         "change_message":"[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":8,
+      "fields":{
+         "action_time":"2016-09-10T22:44:59.696Z",
+         "user":1,
+         "content_type":11,
+         "object_id":"1",
+         "object_repr":"Christa Caggiano - child of Caggiano",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   }
+]

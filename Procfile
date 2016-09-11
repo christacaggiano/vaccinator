@@ -1,0 +1,1 @@
+web: gunicorn vaccinator.wsgi --log-file -
